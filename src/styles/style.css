@@ -1,0 +1,159 @@
+body {
+  background-color: #eee;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 24px 0px;
+}
+
+.title {
+    color: orange;
+    font-size: 150%;
+    padding-left: 16px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    box-sizing: border-box;
+    padding: 16px;
+    flex-basis: 33%;
+    min-width: 240px;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+}
+
+.card .header {
+  padding: 12px 8px;
+}
+
+.card .name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card .type {
+  color: gray;
+}
+
+.card .status {
+  padding: 4px 8px;
+  color: white;
+}
+
+.card .draft {
+  background-color: darkgray;
+  color: #666;
+}
+.card .submitted {
+  background-color: orange;
+}
+
+.card .rejected {
+  background-color: crimson;
+}
+
+.card .approved {
+  background-color: olivedrab;
+}
+
+.card .issued {
+  background-color: blue;
+}
+
+.card .alert {
+  position: absolute;
+  top: -24px;
+  right: -24px;
+  background-color: crimson;
+  color: white;
+  font-size: 48px;
+  border-radius: 32px;
+}
+
+.card .paperclip {
+    position: absolute;
+    top: -3px;
+    right: 16px;
+    height: 64px;
+}
+
+.card .graphics-container {
+    border-bottom: 2px solid darkkhaki;
+}
+
+.card .graphics {
+    display: block;
+    width: 100%;
+}
+
+.card button {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  padding-bottom: 12px;
+  color: grey;
+  outline: none;
+  font-size: 16px;
+}
+
+.card button:hover {
+  background-color: darkgray;
+  color: white !important;
+}
+
+.card .dropdown-arrow {
+  position: relative;
+  top: 8px;
+}
+
+.card .no-actions {
+    text-align: center;
+    padding: 12px 0px;
+    color: gray;
+}
+
+.card .action-button {
+    text-align: left;
+    border-top: 1px solid darkgray;
+    border-right: 48px solid darkgray;
+    padding: 12px;
+    color: black;
+}
+
+.card .action-container {
+  position: relative;
+}
+
+.card .action-icon {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    color: white;
+}
+
+@media(max-width: 1024px){
+  .card-container {
+    flex-basis: 50%;
+  }
+}
+
+@media(max-width: 640px){
+  .container {
+    width: 95%;
+  }
+  .card-container {
+    flex-basis: 100%;
+  }
+}
